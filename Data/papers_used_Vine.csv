@@ -1,0 +1,60 @@
+,Paper,year,category,Definition of Cyber-Bullyning,Type of Cyber-bullying,Dataset,Dataset positive sample,Dataset negative sample,Data Downlaoded,Data Collection process,Oversampleing pst instances,Preprocessing,Text Feature,Psycological features,User info features,Sentiment features,WE,Other features,ML model,Deel Learning model,Innovative model,baselines,Test set,Test positive ex.,Test negative ex.,Accuracy,Precision,Recall,AUC,F1,venue,Comments
+39,Careful what you share in six seconds: Detectingcyberbullying instances in Vine,2015,Cyber-Bullyiing detetction,"considering cyber bullying a sub category in cyber aggression 
+Cyberaggression is defined as aggressive online behavior
+that uses digital media in a way that
+is intended to cause harm to another
+person.Cyberbullying is one
+form of cyberaggression that is more
+restrictively defined as
+ 1- an act of aggression online with 
+2- an imbalance of power between the individuals
+involved  
+3- repetition of the aggression.",0,"Vine(969 media sessions)
+session per a user",31%,69%,1.0,"labelled by experts and amatures 
+on CrowdFlower platform. 5 labellers per post. Agreement for aggressive 76.6% and for bullying 79.49%",0,0,"ngrmass
+no likes
+no comments",0,0,"sentiment of comment
+sentiment of post caption",0,0,"Adaboost, RF, NB, DT",0,0,0,0,0,0,76.39%,0,0,0,0,"International conference on Advances in 
+social media analysis and mining 2015",0
+57,"Investigating Factors Influencing the Latency of
+Cyberbullying Detection",2016,Cyber-Bullying detetction,0,0,Vine (983 media sessions),0,0,1.0,from other researchers,0,0,0,0,"no folloers
+no following
+no likes
+no views",0,0,0,"LR
+adaboost",0,"Incremental classifier
+Dynamic priority scheduler",0,0,0,0,0,0.713,0.66,0,0,0,"We propose
+a multi-stage cyberbullying detection solution that drasti-
+cally reduces the classification time and the time to raise
+cyberbullying alerts."
+71,Scalable and timely detection of cyberbullying in online social networks,2018,Cyber-Bullyiing detetction,"Cyberbullying is define
+as an aggressive online behavior that is carried out repeat
+edly
+against a person who cannot easily defend himself or
+herself, creating a power imbalance [16].","cyber bullying 
+cyber aggressive","Vine (59,560 user, 
+959 media sessions: video, likes, commentns) ",45 media sessions,914 media session,0.0,Crowd folwer 5 workers agreement score 79.49 (CF measure),Snowball sampling in the data collection,0,"unigrams
+negative words",0,"number of followers,followings, likes,views, media-caption
+polarity,subjectivity",0,0,0,LR,0,"1- Incremental classifier classification
+2- Dynamic classification mechanism",AdaBoost,0,0,0,0,0,0,0,0.68,"In SAC 2018: SAC
+2018: Symposium on Applied Computing","1- two key practical issues remain to be worked upon, 
+namely scalability of a cyberbullying detection system and timeliness of raising alerts whenever cyberbullying occurs.
+2- The solution consists of two key components, namely, a dynamic, multilevel pri"
+84,XBully: Cyberbullying Detection within a Multi-Modal Context,2019,Cyber-Bullyiing detetction,"Cyberbullying, commonly defined as the electronic transmission of
+insulting or embarrassing comments, photos, or videos",they don't specify what is type of bullying they are after,"1- Instgram sessions (2,218 , 
+No.comments= 155,267)
+2- Vine sessions (970, 
+No comments = 78,250)","1- insta: 678 sessions (No. comments?)
+2- vine: 304 sessions (No. comments?)","1- insta:  1540 sessions
+ (No. comments?)
+2- vine: 666 sessions (No. comments?)",1.0,0,0,0,0,LWIC model,"Netowork info and 
+User information",0,0,"images meta data
+Time","RF, SVM, LR",0,"1-using multimodlaity 
+machien learnig
+2- noise-resilient embedding refinement.
+3-Xbully as feature","Raw Features (Raw): This is a concatenation of all the multimodal
+features such as network feature and text feature.
+• Bully [37]: A pretrained classifier4 based on textual analysis.
+• SICD [6]: The state-of-the-art cyberbullying detection model
+which use",0,0,0,0,0,0,0,"(RF)  Inst: 0.982 and Vine: 0.787
+(SVM) Inst: 0.928 and Vine: 0.753
+(LR) Inst: 0.878 and Vine: 0.804",WSDM 2019,0

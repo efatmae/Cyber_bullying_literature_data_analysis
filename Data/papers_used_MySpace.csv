@@ -1,0 +1,94 @@
+,Paper,year,category,Definition of Cyber-Bullyning,Type of Cyber-bullying,Dataset,Dataset positive sample,Dataset negative sample,Data Downlaoded,Data Collection process,Oversampleing pst instances,Preprocessing,Text Feature,Psycological features,User info features,Sentiment features,WE,Other features,ML model,Deel Learning model,Innovative model,baselines,Test set,Test positive ex.,Test negative ex.,Accuracy,Precision,Recall,AUC,F1,venue,Comments
+1,Detection of harassment on web 2.0,2009,Cyber-Bullyiing detetction,communication in which a user intentionally annoys one or more others in a web community,personal insult harassment in which a user systematically deprecates the contributions of another user,"kongregate (4,802)
+slashdot (4,303)
+myspace (1,946)","kongregate (42)
+slashdot (60)
+myspace (65)","kongregate (4760)
+slashdot (4243)
+myspace (1881)",0.0,used from CAW comprtion,1,1,"TF-IDF
+ngrams",0,0,1,0,contextual features,0,0,0,0,0,0,0,0,"kongregate (0.35)
+slashdot (0.32)
+myspace (0.41)","kongregate (0.59)
+slashdot (0.27)
+myspace (0.25)",0,"kongregate (0.44)
+slashdot (0.29)
+myspace (0.313)",the Content Analysis in the WEB (CAW 2.0),0
+18,Sentiment analysis for effective detection of cyber bullying,2012,cyber-Bullyiing detetction,0,0,"kongregate (4,802)
+slashdot (4,303)
+myspace (1,946)
+twitter (4865) data from CAW 2","kongregate (42)
+slashdot (60)
+myspace (65)
+Twitter 93 (2%)","kongregate (4760)
+slashdot (4243)
+myspace (1881)
+Twitter 4700 (98%)",0.0,Twitter data is from CAW2 and the rest borrowed from othe researchers,0,0,BOW,0,0,1,0,0,SVM,0,Graph model to detct bullyies and victims,0,0,0,0,"(message classification)0.97
+(user classification 1)",0,0,0,0,Asia-Pacific Web Conference,I do not trust the results as they used acciracy which might reflect the TN which is overwhelming in the dataset
+43,Online social network bullying detection using intelligence techniques,2015,Cyber-Bullyiing detetction,"is  an aggressive intentional act carried out by a group of indiciuals using 
+electronic forms of contact repeatedly 
+and over time against a victim who cannot easily defend him or herself",0,"FormSpring.me
+MySpace",0,0,0.0,CAW 2.0,0,remove stop words and unwanted characters,"BOW
+NLP",0,0,0,0,0,NB,0,"Use Fuzzy rule based 
+and Genatic algorithm",0,0,0,0,"MySpace(0.87)
+FormSpring (0.86)",0,"MySpace(0.91)
+FormSpring (0.92)",0,"MySpace(0.98)
+FormSpring (0.87)",Procedia Computer Science journal,0
+44,Cyberbullying detection and classification using information retrieval algorithm,2015,Cyber-Bullyiing detetction,"an intensional aggressive act carried out by a group or i
+ndividual using electronic forms of contact repeatedly and
+ over time against a victim who cannot easilt defend themselves",0,"FormSpring.me (500)
+MySpace (600)",0,0,0.0,CAW 2.0,0,remove stop words and unwanted characters,"BOW
+NLP
+POS",0,0,0,0,"levenshtein distance 
+to detect the bullying 
+words in the text",NB,0,0,0,0,0,0,"MySpace(0.91)
+FormSpring (0.92)",0,0,0,"MySpace(0.0.89)
+FormSpring (0.87)",International Conference on Advanced Research in Computer Science Engineering and Technology,0
+45,Identification and characterization of cyberbullying dynamics in an online social network,2015,Cyber-Bullyiing detetction,"is defined as using information technology to willfully and repeatedly hurt, insult or harass others.",0,MySpace (3032 post - 1129 users),MySpace (1915 post - 383 user),MySpace (1116 post - 744 user),0.0,labelled by 3 workers,0,0,"BOW
+second person pronouns
+offensive words",0,"age
+gender
+degree centerality
+betweeness centerality
+closness centerality
+eigenvector centerality
+clustering coefficient",1,0,0,DT,0,0,0,0,0,0,0.839,0,0,0,0.836,International Conference on Advances in Social Networks Analysis and Mining ,0
+54,Cyberbullying detection based on semantic-enhanced marginalized denoising auto-encoder,2016,Cyber-Bullying detetction,"is an aggressive intentional actions performed by an individual or a group of people 
+via digital communication methods such as sending messages and posting comments against a victim",0,"MySpace (1539)
+Twitter (7321)","MySpace (398)
+Twitter (2102)","MySpace (1141)
+Twitter (5219)",1.0,"Twitter data was crawled using keywords, then manullay labelled
+myspace data was labelled by 3 labellers",0,"tokenization
+stemming
+remove stop words
+replace user mentions urls with predefined characters",unigrams and bigrams,0,0,0,0,0,0,smSDA,0,"Bullying word matching
+semantic enhances BOW
+LSA
+LDA
+mSDA","Twitter (6521)
+MySpace (1139)",0,0,"Twitter (0.849)
+MySpace (0.897)",0,0,0,"Twitter (0.0.719)
+MySpace (0.776)",IEEE Transactions on Affective Computing journal,0
+62,Sentiment Informed Cyberbullying Detection in Social Media,2017,cyber-Bullyiing detetction,"It is defined as the phenomena of using
+the internet, cell phones and other electronic devices to willfully hurt or harass
+others.",0,"1-Twitter (7,321 from 7,043 users)
+2- MySpace (3,245 from 1,053 users)","1- 2,102
+2- 950","1- 5,219
+2-2,295",1.0,borrowed from other resarchers,0,0,"unigram TF-idf
+inigrams POS",0,0,1,0,0,SICD,0,"ML model that includes alpha and beta as parameters to control the contribution of user-post relation
+and sentiment information, respectively. ","LR, Lasso, NMF, SVM (TF-idf + unnigrams POS + profanity words list), SVM (TF-idf + user information)",20%,0,0,0,0,0,"0.8051 (Twitter)
+0.7404 (MySpace)","0.68 (Twitter)
+0.607 (MYSPace)",ECML PKDD 2017,"1- they use Stanford Twitter Sentiment DS with distant supervised based sentiment ML model  to measure the sentiment score distribution of datasets.
+2- we propose to incorporate sentiment information to detect cyberbullying behaviors.
+3-sparse learning ha"
+88,"Current Limitations in Cyberbullying Detection: on
+Evaluation Criteria, Reproducibility, and Data
+Scarcity",2019,cyberbullying detection,0,cyberbullying,"ASKFM(1000)
+MySpace
+Formspring
+Twitter1
+Twitter2
+Donated
+Crowdsourced
+Wikipedia Talk pages (toxicity)",0,0,0.0,0,0,"tokenization
+lowercase
+special char removed",May features,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,This paper mainly replicate studies using previous datasets

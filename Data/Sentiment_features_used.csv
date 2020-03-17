@@ -1,0 +1,252 @@
+,Paper,year,category,Definition of Cyber-Bullyning,Type of Cyber-bullying,Dataset,Dataset positive sample,Dataset negative sample,Data Downlaoded,Data Collection process,Oversampleing pst instances,Preprocessing,Text Feature,Psycological features,User info features,Sentiment features,WE,Other features,ML model,Deel Learning model,Innovative model,baselines,Test set,Test positive ex.,Test negative ex.,Accuracy,Precision,Recall,AUC,F1,venue,Comments
+1,Detection of harassment on web 2.0,2009,Cyber-Bullyiing detetction,communication in which a user intentionally annoys one or more others in a web community,personal insult harassment in which a user systematically deprecates the contributions of another user,"kongregate (4,802)
+slashdot (4,303)
+myspace (1,946)","kongregate (42)
+slashdot (60)
+myspace (65)","kongregate (4760)
+slashdot (4243)
+myspace (1881)",0.0,used from CAW comprtion,1,1,"TF-IDF
+ngrams",0,0,1,0,contextual features,0,0,0,0,0,0,0,0,"kongregate (0.35)
+slashdot (0.32)
+myspace (0.41)","kongregate (0.59)
+slashdot (0.27)
+myspace (0.25)",0,"kongregate (0.44)
+slashdot (0.29)
+myspace (0.313)",the Content Analysis in the WEB (CAW 2.0),0
+6,you too?! mixed-initiative lda story matching to help teens in distress,2011,0,when a bully assult their victim over the internet by sending or posting text or images in different media with the intentin to hurt or embarrass another person.,gender bullying,"twitter_ traning (5000)
+",25%,75%,0.0,"(Training) Twitter aPI using keywords Gay Homo Dike and Queer
+(Test) Twitter api handlabelled and AMT used",0,1,BOW,0,0,1,0,0,NB,0,0,0,twitter_test (960),0,0,0.673,0,0,0,0,NSDI journal,they do cb detection in form of sentiment classififcation
+7,Modeling the detection of textual cyberbullying.,2011,Cyber-Bullyiing detetction,"cyberbullying can be defined as the following: 'when the
+Internet, cell phones or other devices are used to send or
+post text or images intended to hurt or embarrass another
+person’ ","sexuality, race, culture and intelligence","youtube vidoes on these senstive topics(50,000)",0,0,0.0,"2 annotators labelled the comments into 
+race, sexuality, intelligence and none",0,0,"Tf-idf unigrams,
+profanity words,
+frequently POS bigrams,",0,0,Ortony lexicon with negative connotations,0,0,"NB, SVM, C4.5, rule based",0,0,0,"30% validation
+20% test",0,0,"rule based :
+(sexuality) 80.20%
+(Race) 68.30%
+intelligence(70.39%)",0,0,0,0,Association for the Advancement of Artificial Intelligence,Binary classififcation is better than multiclassififcation
+18,Sentiment analysis for effective detection of cyber bullying,2012,cyber-Bullyiing detetction,0,0,"kongregate (4,802)
+slashdot (4,303)
+myspace (1,946)
+twitter (4865) data from CAW 2","kongregate (42)
+slashdot (60)
+myspace (65)
+Twitter 93 (2%)","kongregate (4760)
+slashdot (4243)
+myspace (1881)
+Twitter 4700 (98%)",0.0,Twitter data is from CAW2 and the rest borrowed from othe researchers,0,0,BOW,0,0,1,0,0,SVM,0,Graph model to detct bullyies and victims,0,0,0,0,"(message classification)0.97
+(user classification 1)",0,0,0,0,Asia-Pacific Web Conference,I do not trust the results as they used acciracy which might reflect the TN which is overwhelming in the dataset
+25,Expert knowledge for automatic detection of bullies in social networks,2013,Cyber-Bullyiing detetction,"Cyberbullying is defined as an aggressive, intentional
+act carried out by a group or individual, using electronic forms of contact repeatedly
+and over time against a victim who cannot easily defend him or herself",assigning bullying score to people,"youtube(54,050 comments from 3,603 usesrs)",12% of users are bullies,88%,1.0,"2 graduate studentns labeled the users as bullies or not 
+with inter agreement Kappa of 0.78",0,0,"no profane words,
+length of comment,
+misspellings and short words,
+comments targeted to someone
+tf-idf",0,"hidden identities,
+age of user,
+period of membership,
+no uploads,
+no subscrptions,
+no comments",no emotion icons,0,"A) Experts: a panel of 12 experts in the area of cyberbullying was asked to answer questions about the features presented in Table 1. For each feature they indicated 1) the
+likelihood that a bully user belongs to a certain category relevant for that feature and
+2) the importance of that feature. The likelihood was indicated on four-point scale
+‘Unlikely’, ‘Less likely’, ‘Likely’ and ‘Very likely’ corresponding to values 0.125,0.375, 0.625 and 0.875 respectively
+B)MCES decision making systems
+","NB, SVM, C4.5, MCES",0,0,SVM (text features),0,0,0,MCES (0.76),0,0,0,0,anadian Conference on Artificial Intelligence,"2- We demonstrated that the expert system outperforms the machine
+learning models and the hybrid approach results in a further but marginal improvement in prediction performance
+1- compare three types of automatic detection: an expert system, supervised machine learning models, and a hybrid type combining the two."
+26,Improving Cyberbullying Detection with User Context,2013,Cyber-Bullyiing detetction,an aggressive intentional act carried out by a group individual using electornic form of contact,0,Youtube(4626 comments and 3858 users) ,9.70%,90.30%,0.0,manually labelled with inter-annotation score 0.93,0,0,"no profane
+first and sceonf person pronouns 
+no cyberbullying words",0,"user history of using profane words
+users linguistic style
+age",no. emotion icons,0,0,SVM,0,0,0,0,0,0,0,0.77,0.55,0,0.64,European Conference on Information Retrieval,0
+29,Experts and Machines against Bullies: A Hybrid Approach to Detect Cyberbullies ,2014,Cyber-Bullyiing detetction,"Cyberbullying is defined as an aggressive, intentional
+act carried out by a group or individual, using electronic forms of contact repeatedly
+and over time against a victim who cannot easily defend him or herself",assigning bullying score to people,"youtube(54,050 comments from 3,603 usesrs)",12% of users are bullies,88%,1.0,"2 graduate studentns labeled the users as bullies or not 
+with inter agreement Kappa of 0.78",0,0,"no profane words,
+length of comment,
+misspellings and short words,
+comments targeted to someone
+tf-idf",0,"hidden identities,
+age of user,
+period of membership,
+no uploads,
+no subscrptions,
+no comments",no emotion icons,0,"A) Experts: a panel of 12 experts in the area of cyberbullying was asked to answer questions about the features presented in Table 1. For each feature they indicated 1) the
+likelihood that a bully user belongs to a certain category relevant for that feature and
+2) the importance of that feature. The likelihood was indicated on four-point scale
+‘Unlikely’, ‘Less likely’, ‘Likely’ and ‘Very likely’ corresponding to values 0.125,0.375, 0.625 and 0.875 respectively
+B)MCES decision making systems
+","NB, SVM, C4.5, MCES",0,0,SVM (text features),0,0,0,MCES (0.76),0,0,0,0,anadian Conference on Artificial Intelligence,"2- We demonstrated that the expert system outperforms the machine
+learning models and the hybrid approach results in a further but marginal improvement in prediction performance
+1- compare three types of automatic detection: an expert system, supervised machine learning models, and a hybrid type combining the two."
+31,Aggressive Text Detection for Cyberbullying,2014,Cyber-Bullyiing detetction,the continuous intentional aggression over an indefense victim via electronic media is known as cyberbullying,aggressive text detection,"Twitter(12,705)","bitch (281)
+fuck(110_",0,0.0,0,data set filtered,0,"document length,
+number of offensive words,
+frequency of word ""you"",
+swear words",0,0,"1-The overall affective value for a given word (as well as the value for each of
+the differentials) lies within the range [1, 9], where 9 is the closest to happiness.
+2-SentiWordNet assigns each synset three classifications with respect to confidence
+negativity, positivity, and objectivity",0,0,"Fuzzy Rulebases,
+LR
+",0,0,0,0,0,0,AVG MSE = 4.8,0,0,0,0,MICAI 2014,statistical analysis more than feature engineering or model selecion
+35,Automatic detection of antisocial behaviour in texts,2014,Cyber-Bullyiing detetction,"ASB is defined as any unconsiderable action taken aginst individuals or group of individuals 
+that may cause harm or distress to sociey",Anti social behaviour,"ASB
+ISEAR
+Movie_review
+wkipedia_extract","ASB (148)
+ISEAR (265)
+Movie_review (178)
+wkipedia_extract (212)",0,0.0,borrowed from other researchers,0,0,BOW,0,0,1,0,0,"MNB
+SVM
+DT",0,0,0,0,0,0,MNB(0.90),0.9,0.9,0,0.9,International workshop on advances in semantic information retrieval,0
+36,Semi-supervised learning for cyberbullying detection in social networks,2014,Cyber-Bullyiing detetction,0,0,CAW2,0,0,0.0,downloaded from the inernet,1,1,"No. swear words
+pronouns
+capital letters",0,1,1,0,0,0,0,semi-supervised(K-FSVM),"LR
+NB
+RF",0,0,0,0.99,0.55,0.25,0,0.47,Australasian Database Conference,0
+37,Cyberbullying detection and prevention: data mining and psychological perspective,2014,Cyber-Bullyiing detetction,"bullying is targeting an individual or group of individuals and exposing them to 
+ridicule and negative actions both physical and mental delibberately",0,Myspace,0,0,0.0,manually labelled,0,"Tokenizing
+Filter out tokens based on length
+stemming
+silter stopwords",1,0,0,1,0,0,SVM,0,0,0,0,0,0,0,0,0,0,0,"International Conference on Circuits, Power and Computing Technologies",they use sentiment analysis and confidence as a metric
+39,Careful what you share in six seconds: Detectingcyberbullying instances in Vine,2015,Cyber-Bullyiing detetction,"considering cyber bullying a sub category in cyber aggression 
+Cyberaggression is defined as aggressive online behavior
+that uses digital media in a way that
+is intended to cause harm to another
+person.Cyberbullying is one
+form of cyberaggression that is more
+restrictively defined as
+ 1- an act of aggression online with 
+2- an imbalance of power between the individuals
+involved  
+3- repetition of the aggression.",0,"Vine(969 media sessions)
+session per a user",31%,69%,1.0,"labelled by experts and amatures 
+on CrowdFlower platform. 5 labellers per post. Agreement for aggressive 76.6% and for bullying 79.49%",0,0,"ngrmass
+no likes
+no comments",0,0,"sentiment of comment
+sentiment of post caption",0,0,"Adaboost, RF, NB, DT",0,0,0,0,0,0,76.39%,0,0,0,0,"International conference on Advances in 
+social media analysis and mining 2015",0
+45,Identification and characterization of cyberbullying dynamics in an online social network,2015,Cyber-Bullyiing detetction,"is defined as using information technology to willfully and repeatedly hurt, insult or harass others.",0,MySpace (3032 post - 1129 users),MySpace (1915 post - 383 user),MySpace (1116 post - 744 user),0.0,labelled by 3 workers,0,0,"BOW
+second person pronouns
+offensive words",0,"age
+gender
+degree centerality
+betweeness centerality
+closness centerality
+eigenvector centerality
+clustering coefficient",1,0,0,DT,0,0,0,0,0,0,0.839,0,0,0,0.836,International Conference on Advances in Social Networks Analysis and Mining ,0
+61,Mean birds: Detecting aggression and bullying on twitter.,2017,Cyber-Bullyiing detetction,"Cyberbullying and
+cyberaggression can take many forms and de_x005F_x005F_x005F_x005F_x005F_x001B_nitions however, the former typically denotes repeated and hostile behavior
+performed by a group or an individual and the latter intentional
+harm delivered via electronic means to a person or a ",Cyberbullying and Cyber aggressive,"Twitter(9,484)","1-base line with all tweets
+2- hatespeech with hashtags related to hate speech",0,0.0,"data labelled using CF workers.
+5 workers pr batch
+agreement score 0.45",0,0,"avg no. hashtags used, emotionicons,uppercases and urls
+
+",0,"no.posts, friends, 
+followers","sentiment score
+hate score",avg word embeddings scor,"network fetures like: avg power difference, influence score","J48, LADTree, LMT, NBTree, RF, Funcitonal tree",0,0,0,10%,0,0,0,89.9,91.7,0.907,0,Websci 2017,"1- they label users as bullies, agressors or not
+2- the innovaion is in using different combinations of features"
+62,Sentiment Informed Cyberbullying Detection in Social Media,2017,cyber-Bullyiing detetction,"It is defined as the phenomena of using
+the internet, cell phones and other electronic devices to willfully hurt or harass
+others.",0,"1-Twitter (7,321 from 7,043 users)
+2- MySpace (3,245 from 1,053 users)","1- 2,102
+2- 950","1- 5,219
+2-2,295",1.0,borrowed from other resarchers,0,0,"unigram TF-idf
+inigrams POS",0,0,1,0,0,SICD,0,"ML model that includes alpha and beta as parameters to control the contribution of user-post relation
+and sentiment information, respectively. ","LR, Lasso, NMF, SVM (TF-idf + unnigrams POS + profanity words list), SVM (TF-idf + user information)",20%,0,0,0,0,0,"0.8051 (Twitter)
+0.7404 (MySpace)","0.68 (Twitter)
+0.607 (MYSPace)",ECML PKDD 2017,"1- they use Stanford Twitter Sentiment DS with distant supervised based sentiment ML model  to measure the sentiment score distribution of datasets.
+2- we propose to incorporate sentiment information to detect cyberbullying behaviors.
+3-sparse learning ha"
+64,"Automatic detection of cyberbullying in social
+media text",2017,0,a content taht is published online by an individual and that is aggressive or hurtful against a victim,"threat
+insult
+exclusion
+sexual talk
+defense
+encouragment to harassment","Askfm - Englsih (113698)
+Askfm - Ducth (78387)",0,0,1.0,"data annotated by experts (linguists) with
+ interannotator agreement score (Cohen kappa - Ducth) 
+is 0.69 and (Fleiss kappa - English) is 0.59",cost-senstive,"POS
+lemmatisation
+","word n-grams
+char n-gram
+BOW
+Term lists",0,0,1,0,Topic modelling (LDA nad LSI),SVM,0,0,0,0,0,0,0,"English (0.74)
+Dutch (0.67)",English (0.56) Dutch (0.52),"AUCROC
+English (0.77) Dutch (0.75)
+",English (0.64) Dutch (0.58),PLOS ONE journal,they comapre the performance of different combinations of features and the performance to detect different types of cyberbullying
+68,Deep Learning for Detecting Cyberbullying Across Multiple Social Media Platforms,2018,Cyber-Bullyiing detetction,"Cyberbullying has been defined by the National Crime Prevention Council as
+the use of the Internet, cell phones or other devices to send or post text or images
+intended to hurt or embarrass another person.","Personal attacks.
+Bullying
+Racism.
+Sexism.","Formspring (12,000)
+Twitter (16,000)
+Wikipedia talk pages (100,000)","Formspring (825 = 6.8%)
+Twitter (3117 sexism = 19.4%)
+Twitter (1957 racis = 12.2%)
+Wikipedia (13,590 = 13.59%)","Formspring (11,175 = 93.12%)
+Twitter (10,926  = 68.28%)
+Wikipedia (86,410 = 86.41%)",1.0,"Formspring (AMT - 3 workers no inter-annotator agreement)
+Twitter (Labelled by ressearchers)
+Wikipedia (crowdflower - 10 workers - 0.45 agreement score)","oversample bullying class data by 3 times
+",0,"BOW n-gram words 
+BOW n-gram characters
+Glove
+SSWE",0,0,"SSWE (sentiment
+ word embeddings)","Glove
+SSWE",0,"LR, SVM, RF, NB","CNN, LSTM, BLSTM, BLSTM + attention, CNN","using transfer learning
+ to learn between
+ different platforms","LR, SVM, RF, NB, SVM",0,0,0,0,LSTM (0.92),BLSTM + attention (0.91),0,LSTM (0.91),ECIR 2018,"1-We have shown that DNN models can be used for cyberbullying detection on
+various topics across multiple SMPs using three datasets and four DNN models.
+These models coupled with transfer learning beat state of the art results for
+all three datasets.
+2- T"
+70,Detecting Hate Speech on Twitter Using a Convolution-GRU Based Deep Neural Network,2018,Hate speech detetction,"we identify that hate speech
+(1) targets individual or groups on the basis of their characteristics (targeting
+characteristics); (2) demonstrates a clear intention to incite harm, or to promote
+hatred; (3) may or may not use offensive or profane words.","hatespeech
+refugees","Twitter (2,435)",414 (17%),2021 (83%),0.0,"annotated by liguistic researcher and 2 student researchers 
+(agreement score not given)","filtering twitter api using keywords
+ and hashtags in 3 batches",0,"(Unigrams,bigrams and trigrams )Tfidf
+number of mentions, and hashtags4; 
+number of characters, and words;",0,0,"sentiment polarity 
+scores of the tweet",0,"1-Linguistic features like POS
+2-Enhanced feature set",0,CNN + GRU,0,"SVM, CNN",0,0,0,0,0,0,0,0.92,Nature 2018,"it sets new benchmark by outperforming on 6 out of 7 datasets by between
+1 and 13% in F1. We also extend the existing dataset collection on this
+task by creating a new dataset covering different topics."
+75,"Cyberbullying Detection on Social Network
+Services",2018,0,"a use of information and communication technology to support malicious repetitive and hostile
+behaviors against individuals or groups in order to harm other",Cyberbullying,Twitter ,0,0,0.0,0,0,"convert user mentions to special characters
+remove urls puctuations and numbers
+correct misspelling
+segmantation
+stemming
+POS","vulgar words
+person pronouns
+BOW",0,"no user tweets
+no words in seld introduction
+image usage",1,0,"negative subjectivity
+text readability
+","KNN
+SVM
+DT",0,0,0,0,0,0,0,0,0,0,0,Twenty-Second Pacific Asia Conference on Information Systems,they dont report experiement results
+76,Optimal Online Cyberbullying Detection,2018,optimizing scalability and timliness of cyberbullying detection ,0,Cyberbullying,Twitter(10600),Twitter(5300),Twitter(5300),0.0,manually labelled,0,0,"no acronyms
+offensive acronyms",0,0,mean value of valence or arousal or dominance,0,0,0,0,AvOID algorithm for optimal online cyberbullying detection,0,0,0,0,0,0,0,0,0,ICASSP,They dont report experiement results. they report probability of error.
+83,Understanding Cyberbullying on Instagram and Ask.fm via Social Role Detection,2019,Cyber-Bullyiing detetction,0,aggressive,"Instgram (13,350 comment)
+",12%,88%,0.0,"The labeled Instagram
+comments are chosen from top 200 media sessions ranked
+by the number of insulting words which appeared in the comments
+of the media session, the percentage of negative comments, and the
+absolute number of negative comments on the med",0,0,"73 features from LIWC2015 categories [15], the compound sentiment
+score from VADER [10], and 7 basic linguistic features (e.g.,
+the number of upper case words)",1,0,1,0,0,RF,0,0,0,0,0,0,0,0.4,0.35,0,0.37,www 2019,"In this work, we focus our analysis on three different social roles
+in cyberbullying: victim, bully, and supporter. Figure 2 describes
+the pipeline of our social role detection method. Social roles are
+identified based on the aggressive label of comments "

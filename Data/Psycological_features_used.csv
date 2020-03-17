@@ -1,0 +1,102 @@
+,Paper,year,category,Definition of Cyber-Bullyning,Type of Cyber-bullying,Dataset,Dataset positive sample,Dataset negative sample,Data Downlaoded,Data Collection process,Oversampleing pst instances,Preprocessing,Text Feature,Psycological features,User info features,Sentiment features,WE,Other features,ML model,Deel Learning model,Innovative model,baselines,Test set,Test positive ex.,Test negative ex.,Accuracy,Precision,Recall,AUC,F1,venue,Comments
+58,"Cybercrime detection in online communications: The experimental
+case of cyberbullying detection in the Twitter network",2016,Cyber-Bullying detetction,"0Cyberbullying behaviors are defined as aggressive behaviors
+exhibited through electronic or digital media and intended to inflict
+harm or discomfort to a victim",aggressive behaviour,Twitter (10007),Twitter (599),0,0.0,handl labbeled by 3 experts,oversampling the minority and under sample majority class,"lowercase
+urls user mentions replaced with special characters
+correcting misspelled words
+remove white spaces","vulgar words
+fisrt and second person pronouns
+bullying acrynomes",neurotic features,"network features
+user activity features
+age
+gender
+",0,0,"activity features
+specific social network cyberbullying features
+measure features usefulness using cho-square test information gain and pearson correlation","SVM
+NB
+RF
+KNN",0,0,0,0,0,0,0,SVM + information gain (0.994),SVM + information gain (0.890),SVM + information gain (0.500),SVM + information gain (0.943),journal Computers in Human Behavior,"We select three features selection algorithms, namely, c 2
+test, information gain, and Pearson correlation, to determine the
+most significant proposed features. The synthetic minority over-
+sampling technique (SMOTE) approach and the weights
+adjusting approach (cost-sensitive) are used to balance the
+classes in the data set. Th"
+67,Cyberbullying System Detection and Analysis,2017,cyberbullying detection,"willful and repeated harm inflicted through the use of computers cell
+ phones and other electronic devices",cyber bullying ,ASKfm(1000),ASKfm(17%),ASKfm(83%),0.0,"they downloaded data and selected questions
+ and answers that contain one insult or swear word",0,"chunck text into sentences
+remove weblinks and unknown characters
+correct misspelling
+","tf-idf
+unusual capitalization
+dependency features
+",LIWC,0,0,0,0,SVM,0,0,0,0,0,0,0.994,0.69,0.849,0,0.761,2017 European Intelligence and Security Informatics Conference,0
+83,Understanding Cyberbullying on Instagram and Ask.fm via Social Role Detection,2019,Cyber-Bullyiing detetction,0,aggressive,"Instgram (13,350 comment)
+",12%,88%,0.0,"The labeled Instagram
+comments are chosen from top 200 media sessions ranked
+by the number of insulting words which appeared in the comments
+of the media session, the percentage of negative comments, and the
+absolute number of negative comments on the med",0,0,"73 features from LIWC2015 categories [15], the compound sentiment
+score from VADER [10], and 7 basic linguistic features (e.g.,
+the number of upper case words)",1,0,1,0,0,RF,0,0,0,0,0,0,0,0.4,0.35,0,0.37,www 2019,"In this work, we focus our analysis on three different social roles
+in cyberbullying: victim, bully, and supporter. Figure 2 describes
+the pipeline of our social role detection method. Social roles are
+identified based on the aggressive label of comments "
+84,XBully: Cyberbullying Detection within a Multi-Modal Context,2019,Cyber-Bullyiing detetction,"Cyberbullying, commonly defined as the electronic transmission of
+insulting or embarrassing comments, photos, or videos",they don't specify what is type of bullying they are after,"1- Instgram sessions (2,218 , 
+No.comments= 155,267)
+2- Vine sessions (970, 
+No comments = 78,250)","1- insta: 678 sessions (No. comments?)
+2- vine: 304 sessions (No. comments?)","1- insta:  1540 sessions
+ (No. comments?)
+2- vine: 666 sessions (No. comments?)",1.0,0,0,0,0,LWIC model,"Netowork info and 
+User information",0,0,"images meta data
+Time","RF, SVM, LR",0,"1-using multimodlaity 
+machien learnig
+2- noise-resilient embedding refinement.
+3-Xbully as feature","Raw Features (Raw): This is a concatenation of all the multimodal
+features such as network feature and text feature.
+• Bully [37]: A pretrained classifier4 based on textual analysis.
+• SICD [6]: The state-of-the-art cyberbullying detection model
+which use",0,0,0,0,0,0,0,"(RF)  Inst: 0.982 and Vine: 0.787
+(SVM) Inst: 0.928 and Vine: 0.753
+(LR) Inst: 0.878 and Vine: 0.804",WSDM 2019,0
+86,"Hierarchical Attention Networks for Cyberbullying Detection
+on the Instagram Social Network",2019,Cyber-Bullyiing detetction,"as a repetitive act
+of aggression that involves a power imbalance between
+the perpetrator and the victim [10].",aggression,Instagram (2218 media sessions),Instagram (678),Instagram (1540),1.0,borrowed from other researchers,0,0,"ngrmas
+TFIDF word
+TFIDF char",LWIC model,0,0,glove,0,0,0,HANCD,"NB LR KNN pretrained SVM Soni and Singh
+LSTM
+CNN
+HAN",0,0,0,0,0,0,0.851,0.783,SIAM,"We propose a hierarchical attention network for
+cyberbullying detection that takes these aspects of cyberbul-
+lying into account. The primary distinctive characteristics
+of our approach include: (i) a hierarchical structure that
+mirrors the structure of a social media session; (ii) levels
+of attention mechanisms applied at the word and comment
+level, thereby enabling the model to pay different amounts
+of attention to words and comments, depending on the con-
+text; and (iii) a cyberbullying detection task that also pre-
+dicts the interval of time between two adjacent comments.
+These characteristics allow the model to exploit the com-
+monalities and differences across these two tasks to improve
+the performance of cyberbullying detection."
+87, ,2019,bullies detetction,"describes the use of electronic forms of communi-
+cation to intentionally harm or harass others",cyberbullying,"Twitter (3095)
+Twitter (19994)","Twitter (1794)
+Twitter (3845)","Twitter (1301)
+Twitter (16149)",0.0,one dataset borrowed and another labelled by 3 experts,0,0,0,LWIC model,0,0,0,0,0,0,PI-bully,"KNN
+RF
+SVM
+Bully
+SICD",0,0,0,0,0.425,0.887,0.844,0.574,0,"n this paper,
+we propose a personalized cyberbullying detection
+framework, PI-Bully, that draws on empirical find-
+ings from psychology highlighting unique charac-
+teristics of victims and bullies and peer influence
+from like-minded users as predictors of cyberbully-
+ing behaviors. Our framework is novel in its ability
+to model peer influence in a collaborative environ-
+ment and tailor cyberbullying prediction for each
+individual user"

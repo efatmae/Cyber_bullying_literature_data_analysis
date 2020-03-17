@@ -1,0 +1,90 @@
+,Paper,year,category,Definition of Cyber-Bullyning,Type of Cyber-bullying,Dataset,Dataset positive sample,Dataset negative sample,Data Downlaoded,Data Collection process,Oversampleing pst instances,Preprocessing,Text Feature,Psycological features,User info features,Sentiment features,WE,Other features,ML model,Deel Learning model,Innovative model,baselines,Test set,Test positive ex.,Test negative ex.,Accuracy,Precision,Recall,AUC,F1,venue,Comments
+7,Modeling the detection of textual cyberbullying.,2011,Cyber-Bullyiing detetction,"cyberbullying can be defined as the following: 'when the
+Internet, cell phones or other devices are used to send or
+post text or images intended to hurt or embarrass another
+person’ ","sexuality, race, culture and intelligence","youtube vidoes on these senstive topics(50,000)",0,0,0.0,"2 annotators labelled the comments into 
+race, sexuality, intelligence and none",0,0,"Tf-idf unigrams,
+profanity words,
+frequently POS bigrams,",0,0,Ortony lexicon with negative connotations,0,0,"NB, SVM, C4.5, rule based",0,0,0,"30% validation
+20% test",0,0,"rule based :
+(sexuality) 80.20%
+(Race) 68.30%
+intelligence(70.39%)",0,0,0,0,Association for the Advancement of Artificial Intelligence,Binary classififcation is better than multiclassififcation
+11,Detecting Offensive Language in Social Media to Protect Adolescent Online Safety ,2012,cyber-Bullyiing detetction,they define offenisive  sentence as a sentence that contains strongly offensive words or weakly offensive words used to decribe anotehr person,offensive sentence,"Youtube(1700 sentence, 249 users)","sentences(610)
+users (99)","sentences(1,090)
+users(99)",0.0,"randomly crawled comments on 18 youtube videos
+the users are labeled by 3 annotators with cohen kappa 0.73",0,1,"BOW
+ngrams
+NLP dependency detection",0,style,0,0,0,NB and SVM,0,0,0,handlabelled  sentences,173,0,0,"(LSF sentence IR)0.98
+(LSF SVM user classification) 0.779","(LSF sentence IR)0.94
+(LSF SVM user classification) 0.778",0,0,"International Conference on Privacy, Security, Risk and Trust and 2012 International Confernece on Social Computing",they use IR to find offensive entences and Classification ti find offensive users 
+25,Expert knowledge for automatic detection of bullies in social networks,2013,Cyber-Bullyiing detetction,"Cyberbullying is defined as an aggressive, intentional
+act carried out by a group or individual, using electronic forms of contact repeatedly
+and over time against a victim who cannot easily defend him or herself",assigning bullying score to people,"youtube(54,050 comments from 3,603 usesrs)",12% of users are bullies,88%,1.0,"2 graduate studentns labeled the users as bullies or not 
+with inter agreement Kappa of 0.78",0,0,"no profane words,
+length of comment,
+misspellings and short words,
+comments targeted to someone
+tf-idf",0,"hidden identities,
+age of user,
+period of membership,
+no uploads,
+no subscrptions,
+no comments",no emotion icons,0,"A) Experts: a panel of 12 experts in the area of cyberbullying was asked to answer questions about the features presented in Table 1. For each feature they indicated 1) the
+likelihood that a bully user belongs to a certain category relevant for that feature and
+2) the importance of that feature. The likelihood was indicated on four-point scale
+‘Unlikely’, ‘Less likely’, ‘Likely’ and ‘Very likely’ corresponding to values 0.125,0.375, 0.625 and 0.875 respectively
+B)MCES decision making systems
+","NB, SVM, C4.5, MCES",0,0,SVM (text features),0,0,0,MCES (0.76),0,0,0,0,anadian Conference on Artificial Intelligence,"2- We demonstrated that the expert system outperforms the machine
+learning models and the hybrid approach results in a further but marginal improvement in prediction performance
+1- compare three types of automatic detection: an expert system, supervised machine learning models, and a hybrid type combining the two."
+26,Improving Cyberbullying Detection with User Context,2013,Cyber-Bullyiing detetction,an aggressive intentional act carried out by a group individual using electornic form of contact,0,Youtube(4626 comments and 3858 users) ,9.70%,90.30%,0.0,manually labelled with inter-annotation score 0.93,0,0,"no profane
+first and sceonf person pronouns 
+no cyberbullying words",0,"user history of using profane words
+users linguistic style
+age",no. emotion icons,0,0,SVM,0,0,0,0,0,0,0,0.77,0.55,0,0.64,European Conference on Information Retrieval,0
+29,Experts and Machines against Bullies: A Hybrid Approach to Detect Cyberbullies ,2014,Cyber-Bullyiing detetction,"Cyberbullying is defined as an aggressive, intentional
+act carried out by a group or individual, using electronic forms of contact repeatedly
+and over time against a victim who cannot easily defend him or herself",assigning bullying score to people,"youtube(54,050 comments from 3,603 usesrs)",12% of users are bullies,88%,1.0,"2 graduate studentns labeled the users as bullies or not 
+with inter agreement Kappa of 0.78",0,0,"no profane words,
+length of comment,
+misspellings and short words,
+comments targeted to someone
+tf-idf",0,"hidden identities,
+age of user,
+period of membership,
+no uploads,
+no subscrptions,
+no comments",no emotion icons,0,"A) Experts: a panel of 12 experts in the area of cyberbullying was asked to answer questions about the features presented in Table 1. For each feature they indicated 1) the
+likelihood that a bully user belongs to a certain category relevant for that feature and
+2) the importance of that feature. The likelihood was indicated on four-point scale
+‘Unlikely’, ‘Less likely’, ‘Likely’ and ‘Very likely’ corresponding to values 0.125,0.375, 0.625 and 0.875 respectively
+B)MCES decision making systems
+","NB, SVM, C4.5, MCES",0,0,SVM (text features),0,0,0,MCES (0.76),0,0,0,0,anadian Conference on Artificial Intelligence,"2- We demonstrated that the expert system outperforms the machine
+learning models and the hybrid approach results in a further but marginal improvement in prediction performance
+1- compare three types of automatic detection: an expert system, supervised machine learning models, and a hybrid type combining the two."
+69,"Cyberbullying Intervention Interface Based on Convolutional
+Neural Networks",2018,Cyber-Bullyiing detetction,"Cyberbullying, which can be defined as ‘when the Internet, cell phones or other devices are
+used to send or post text or images intended to hurt or embarrass another person’ (Dinakar
+et al., 2012),","bullying
+anxiety
+ depression.","The data was collected by the Visr child safety app from September 2014 to March 2016.
+Over a half-million online posts were selected from among the social media platforms (Face
+book,
+Instagram, Twitter, Pinterest, Tumblr, Youtube) and Gmail. (total = 14,",1753 (12.3%),12441 (87.7%),0.0,anntated by 3 workers with Cphen's kappa = 0.805,0,0,"BOW word unigrams
+
+As suggested by previous research, we also added textual features (total used:
+4
+93) from LIWC 2015",0,0,0,0,0,0,CNN,0,"SVM
+ZeroR",0,30% in total,30% in total,0,0,0,0.898,0,ACLweb 2018,0
+85,Empirical Analysis of Supervised Machine Learning Techniques for Cyberbullying Detection,2019,Cyber-Bullyiing detetction,"They don't provide a proper definition. They use this one ""Cyberbullying is utilization of digital technology for targeting a person or
+a group in order to bully them socially and psychologically.""","They detect data related to the follwing bulying topics:
+LGTB
+Culture
+Race
+Physical attributes","They collected 60 youtube videos on these sentive topics
+with total of 7962 comments with 116 cmment per video.",0,0,0.0,Annoated by researchers with no info porvided.,0,0,"TF-IDF
+Ortony lexicon words (negaative weight for profanity words)
+POS unigrams
+bigrams",0,0,0,0,0,"RF, SVM, KNN(K=1), NB",0,0,0,20% 0f the data,0,0,"0.821, 0.808, 0.83, 0.814","0.815, 0.799, 0.824, 0.808","0.822, 0.809, 0.83, 0.814",0,"0.817, 0.797, 0.826, 0.81","International Conference on Innovative
+ Computing and Communications 2019",0

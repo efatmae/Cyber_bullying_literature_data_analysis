@@ -1,0 +1,66 @@
+,Paper,year,category,Definition of Cyber-Bullyning,Type of Cyber-bullying,Dataset,Dataset positive sample,Dataset negative sample,Data Downlaoded,Data Collection process,Oversampleing pst instances,Preprocessing,Text Feature,Psycological features,User info features,Sentiment features,WE,Other features,ML model,Deel Learning model,Innovative model,baselines,Test set,Test positive ex.,Test negative ex.,Accuracy,Precision,Recall,AUC,F1,venue,Comments
+28,Antisocial behavior corpus for harmful language detection,2013,Anti-social behaviour,unconsiderate action taken against individuals or groups of individuals tha may cause harm or distress to society.,"anti social behabiour
+criminal
+estremism","web corpus (148 post)
+ISEAR
+Movie reviews(200)
+Wikipedia text extract",web corpus (148 post),0,0.0,keyword search was used to collect data,0,"tokenization
+stemming
+remove stop words",BOW,0,0,0,0,0,"NB
+SVM
+DT
+
+",0,0,0,0,0,0,0.96,0.96,0.96,0,0.96,Federated Conference on Computer Science and Information Systems,the results are not reliable as they don't have balanced datase.
+60,Ex Machina: Personal Attacks Seen at Scale,2017,Cyber-Bullyiing detetction,"A recent Pew Research Center study defines on line harassment to include being: called offensive names, purpose
+fully embarrassed, stalked, sexually harassed, physically threat ened, and harassed in a sustained manner [5].","Personal attacks
+aggression
+toxicity","Wkipedia talk pages (115,737)
+randomly sampled (37611)
+bloxked sampled (78126)","randomly sampled (0.9%)
+blocked sampled (16.9%)","randomly sampled (99%)
+blocked sampled (83%)",1.0,"data labelled using Figure eight with 10 workers for each text 
+with Krippendof alpha 0.45","1- random sampling
+2- block sampling (In order to obtain these, we enhance our random dataset by also sampling comments made by users who where blocked for violating Wikipedia’s policy on personal attacks [33].)",0,"BOW n-gram words 
+and n-gram characters",0,0,0,0,0,"LR, MLP",0,0,0,0,0,0,0,0,0,"LR = ED label  (cahr)96.4 (words) 95.55
+MLP = ED label (char) 96.15 (word) 96.59",0,International world wide web conference 2017,"they use 2 ways of labelling the data:
+1- Onehot vcot (OH) each post is 1 (positive) and 0 (negative)
+2- empirical distribution (ED) with each post has a probabiltty of postive or negative based on the labelling from Crowdsourcing."
+68,Deep Learning for Detecting Cyberbullying Across Multiple Social Media Platforms,2018,Cyber-Bullyiing detetction,"Cyberbullying has been defined by the National Crime Prevention Council as
+the use of the Internet, cell phones or other devices to send or post text or images
+intended to hurt or embarrass another person.","Personal attacks.
+Bullying
+Racism.
+Sexism.","Formspring (12,000)
+Twitter (16,000)
+Wikipedia talk pages (100,000)","Formspring (825 = 6.8%)
+Twitter (3117 sexism = 19.4%)
+Twitter (1957 racis = 12.2%)
+Wikipedia (13,590 = 13.59%)","Formspring (11,175 = 93.12%)
+Twitter (10,926  = 68.28%)
+Wikipedia (86,410 = 86.41%)",1.0,"Formspring (AMT - 3 workers no inter-annotator agreement)
+Twitter (Labelled by ressearchers)
+Wikipedia (crowdflower - 10 workers - 0.45 agreement score)","oversample bullying class data by 3 times
+",0,"BOW n-gram words 
+BOW n-gram characters
+Glove
+SSWE",0,0,"SSWE (sentiment
+ word embeddings)","Glove
+SSWE",0,"LR, SVM, RF, NB","CNN, LSTM, BLSTM, BLSTM + attention, CNN","using transfer learning
+ to learn between
+ different platforms","LR, SVM, RF, NB, SVM",0,0,0,0,LSTM (0.92),BLSTM + attention (0.91),0,LSTM (0.91),ECIR 2018,"1-We have shown that DNN models can be used for cyberbullying detection on
+various topics across multiple SMPs using three datasets and four DNN models.
+These models coupled with transfer learning beat state of the art results for
+all three datasets.
+2- T"
+88,"Current Limitations in Cyberbullying Detection: on
+Evaluation Criteria, Reproducibility, and Data
+Scarcity",2019,cyberbullying detection,0,cyberbullying,"ASKFM(1000)
+MySpace
+Formspring
+Twitter1
+Twitter2
+Donated
+Crowdsourced
+Wikipedia Talk pages (toxicity)",0,0,0.0,0,0,"tokenization
+lowercase
+special char removed",May features,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,This paper mainly replicate studies using previous datasets

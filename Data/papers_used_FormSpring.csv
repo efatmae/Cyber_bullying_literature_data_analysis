@@ -1,0 +1,109 @@
+,Paper,year,category,Definition of Cyber-Bullyning,Type of Cyber-bullying,Dataset,Dataset positive sample,Dataset negative sample,Data Downlaoded,Data Collection process,Oversampleing pst instances,Preprocessing,Text Feature,Psycological features,User info features,Sentiment features,WE,Other features,ML model,Deel Learning model,Innovative model,baselines,Test set,Test positive ex.,Test negative ex.,Accuracy,Precision,Recall,AUC,F1,venue,Comments
+8,Using Machine Learning to Detect Cyberbullying,2012,Cyber-Bullyiing detetction,"cyberbullying as willful and repeated harm inflicted through the medium of electronic text
+","flooding, masquerade, flaming,
+trolling, harassment, cyberstalking, denigration, outing, and exclusion.","Forspring.me (13,652 post)",792 (5.8%),"12,860 (94.2%)",1.0,"Crawled and labeled by AMT with 3 workers labelled each post
+they don't mention the inter-agreement score",0,0,"1-per post: No. bad words, pcntg of bad words, No.words, severity of bad word
+2-BOW",0,0,0,0,user anonymity,"Decision trees, Rule based, KNN, SVM (sequential minimal optimization)",0,0,0,2696,195 (7.2%),2501(92.8%),0,0,"87.50% (reported)
+73.14% (me calculated avg  of  all 10 user files)",0,0,Ursinus College,"1- The study reports that rule based model gave the best results but actually when I calculated the avg, I found it is the KNN. May be I calculate something in the wrong way
+2- The anonmity featrue made the results worse
+3- they use BOW not as a feature t"
+27,Detecting cyberbullying: query terms and techniques,2013,Cyber-Bullyiing detetction,wilful and repeated harm inflicted through the medium of electronic text,0,"Formspring(10685)
+Formspring(13652)","1185 (11.1%)
+7%","9500 (88.9%)
+93%",1.0,AMZ hired 3 workers,0,remove special characters and number and emotionicons and words less than 2 char and more than 17 char ,BOW and TF-IDF,0,0,0,0,0,ED-ISL,0,0,0,1000,465 (46%),535 (54%),0,0.5,0,0,0.5,acm web science conference,the do query search as first experiment thn they do LSI
+43,Online social network bullying detection using intelligence techniques,2015,Cyber-Bullyiing detetction,"is  an aggressive intentional act carried out by a group of indiciuals using 
+electronic forms of contact repeatedly 
+and over time against a victim who cannot easily defend him or herself",0,"FormSpring.me
+MySpace",0,0,0.0,CAW 2.0,0,remove stop words and unwanted characters,"BOW
+NLP",0,0,0,0,0,NB,0,"Use Fuzzy rule based 
+and Genatic algorithm",0,0,0,0,"MySpace(0.87)
+FormSpring (0.86)",0,"MySpace(0.91)
+FormSpring (0.92)",0,"MySpace(0.98)
+FormSpring (0.87)",Procedia Computer Science journal,0
+44,Cyberbullying detection and classification using information retrieval algorithm,2015,Cyber-Bullyiing detetction,"an intensional aggressive act carried out by a group or i
+ndividual using electronic forms of contact repeatedly and
+ over time against a victim who cannot easilt defend themselves",0,"FormSpring.me (500)
+MySpace (600)",0,0,0.0,CAW 2.0,0,remove stop words and unwanted characters,"BOW
+NLP
+POS",0,0,0,0,"levenshtein distance 
+to detect the bullying 
+words in the text",NB,0,0,0,0,0,0,"MySpace(0.91)
+FormSpring (0.92)",0,0,0,"MySpace(0.0.89)
+FormSpring (0.87)",International Conference on Advanced Research in Computer Science Engineering and Technology,0
+56,"Cyberbullying Detection with a Pronunciation
+Based Convolutional Neural Network",2016,Cyber-Bullying detetction,"is an aggressive, intentional act conducted by either a group or an individual in 
+cyberspace conducted by either a group or an individual in cyberspace 
+using information and communication technologies",0,"Twitter (1313)
+Formspringme (13000)","Twitter (39%)
+Formspring (7%)","Twitter (61%)
+Formspring (93%)",1.0,from other researchers,0,"removing usernames
+hashtags
+hyperlinks",0,0,0,0,1,Pronounciation conversion,0,CNN,0,"RF
+SVM
+DT",0,0,0,0,0.991,0.97,0.98,0.989,2016 15th IEEE International Conference on Machine Learning and Applications,0
+68,Deep Learning for Detecting Cyberbullying Across Multiple Social Media Platforms,2018,Cyber-Bullyiing detetction,"Cyberbullying has been defined by the National Crime Prevention Council as
+the use of the Internet, cell phones or other devices to send or post text or images
+intended to hurt or embarrass another person.","Personal attacks.
+Bullying
+Racism.
+Sexism.","Formspring (12,000)
+Twitter (16,000)
+Wikipedia talk pages (100,000)","Formspring (825 = 6.8%)
+Twitter (3117 sexism = 19.4%)
+Twitter (1957 racis = 12.2%)
+Wikipedia (13,590 = 13.59%)","Formspring (11,175 = 93.12%)
+Twitter (10,926  = 68.28%)
+Wikipedia (86,410 = 86.41%)",1.0,"Formspring (AMT - 3 workers no inter-annotator agreement)
+Twitter (Labelled by ressearchers)
+Wikipedia (crowdflower - 10 workers - 0.45 agreement score)","oversample bullying class data by 3 times
+",0,"BOW n-gram words 
+BOW n-gram characters
+Glove
+SSWE",0,0,"SSWE (sentiment
+ word embeddings)","Glove
+SSWE",0,"LR, SVM, RF, NB","CNN, LSTM, BLSTM, BLSTM + attention, CNN","using transfer learning
+ to learn between
+ different platforms","LR, SVM, RF, NB, SVM",0,0,0,0,LSTM (0.92),BLSTM + attention (0.91),0,LSTM (0.91),ECIR 2018,"1-We have shown that DNN models can be used for cyberbullying detection on
+various topics across multiple SMPs using three datasets and four DNN models.
+These models coupled with transfer learning beat state of the art results for
+all three datasets.
+2- T"
+72,Using Fuzzy Fingerprints for Cyberbullying Detection in Social Networks,2018,Cyber-Bullyiing detetction,"As a phenomenon, cyberbullying is defined as an
+individual’s intentional, deliberate and repeated acts of cruelty
+to others through harmful posts, messages, or other forms
+of social aggression through various digital technologies [2].",0,Formspring (13160),2205 (16.7%),10955 (83.24%),1.0,anntated by 3 workers with no agreement score provided,"1- no-cyberbullying data down sampled
+2-balanced dataset
+3-full original dataset",0,"TF-IDF
+",0,0,0,0,0,Fuzzy Finger Print,0,"Fuzzy Finger Print ti identify the unqiue
+ finger pront of cyber bullying class (kwyowrds)","SVM,
+MNV 
+LR",0,0,0,0,0,0,0,"balanced ds 0.810 (not the best)
+unbalanced ds 0.773 (not the best)
+balanced training _unbalanced_test 0.390 
+(not the best)",IEEE international conference 2018,"1- Experiments show that
+the Fuzzy Fingerprints slightly outperforms baseline classifiers
+when tested in a close to real life scenario, where cyberbullying
+instances are rarer than those without cyberbullying.
+2-cyberbullying detection is not a binary tas"
+74,A deeper look at detecting cyberbullying in Social networks,2018,cyber-Bullyiing detetction,"cyberbullying is defined as an individual’s intentional, deliberate and repeated acts of cruelty to others through harmful posts, messages, or other forms of social aggression through various digital technologies [2].",0,FormSpring avaiavle Kaggle (13160),2205 (16.75%),"10,955(83.2%)",1.0,AMT labelled the data usign 3 workers,they tested on balanced and unbalanced dataste,0,0,0,0,0,"Google news WE, FormSpring WE, Twitter WE",0,0,"CNN, CLSTM, CNN-LSTM",0,"LR, SVM",0,0,0,0,CNN with Google WE (0.85),CNN with Google WE (0.86),0,CNN with Google WE (0.84),2018 International Joint Conference on Neural Networks (IJCNN),0
+80,Cyberbullying Detection System with Multiple Server Configurations,2018,detect cyberbullying and dropping them before they are recieved by the intended use,"Cyberbullying is bullying that takes place via digital de-
+vices. It can occur via the Short Message Service (SMS), Text,
+and apps, or online in social media, forums, or gaming where
+people can view, participate in, or share content",Cyberbullying,Formspring (60900),Formspring (23000),Formspring (37900),0.0,0,0,"Case conversion
+remove stopwords
+remove punctuation
+",BOW,0,0,0,0,0,"MNB
+SGD",0,0,0,0,0,0,0,0,0,0,"MNB (0.94)
+SGD(0.95)",IEEE,0
+88,"Current Limitations in Cyberbullying Detection: on
+Evaluation Criteria, Reproducibility, and Data
+Scarcity",2019,cyberbullying detection,0,cyberbullying,"ASKFM(1000)
+MySpace
+Formspring
+Twitter1
+Twitter2
+Donated
+Crowdsourced
+Wikipedia Talk pages (toxicity)",0,0,0.0,0,0,"tokenization
+lowercase
+special char removed",May features,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,This paper mainly replicate studies using previous datasets
